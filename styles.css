@@ -1,0 +1,242 @@
+:root {
+  --first-color: #efe2e2;
+  --secundary-color: #8e3a5c;
+  --navbar-shallow-color: #030202;
+  --buttom-color:#AB6B6B;
+  --text-color: #222;
+  
+
+}
+
+body {
+  width: 780px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+}
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+
+.header-container {
+    display: flex;
+    position: sticky;
+    width: 780px;
+    height: 4rem;
+    background-color: #8e3a5c;
+    z-index: 100;
+  }
+ 
+  .nav {
+    display:flex;
+    justify-items:end;
+    align-items: center;
+   
+  }
+
+ /* Logo */
+
+  .logo {
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration:none;
+    color: white;
+    padding: 15px;
+  }
+  /* Menu */
+  .menu {
+    display: flex;
+    justify-items: end;
+    align-items: center;
+    list-style: none;
+    margin: 0p;
+    padding-left: 180px;
+    
+  }
+
+  .menu li {
+    padding: 0 15px;
+  }
+
+  .menu a {
+    color: var(--secundary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration:none;
+    color: white;
+    
+  }
+
+  .menu a::after {
+    content: "";
+    background-color: var(--secundary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .menu a.selected::after,
+  .menu a:hover::after {
+    opacity: 0.8;
+  }
+
+  .menu a:hover {
+    color: var(--buttom-color);
+  }
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    background-color: var(--first-color);
+
+  }
+  .about-text-center{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .about-text-bottom {
+   text-align: left;
+  }
+
+
+.btn {
+  border-radius: 10.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 130px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: var(--buttom-color);
+}
+
+
+/* ********** ProgressBar ********** */
+.progress > p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+
+progress {
+    width: 70%;
+    height: 1.5rem;
+    background-color: #d7cbcb;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #d7cbcb;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: var(--secundary-color);
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: var(--secundary-color);
+  }
+  
+  .progress {
+    margin: 1rem auto;
+  }
+  .progress > p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+  
+.experiences-container {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: 2;
+  grid-area: 20px;
+  background-color: #efe2e2;
+}
+.experiences-text-lef {
+  display: flex;
+  justify-items: left;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  
+}
+.experiences-text-right{
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+  
+}
+
+/********Formulario***/
+      .form{
+        grid-column: span 2;
+      /* For mobile phones: */
+    }
+     
+    .contact {
+        background-color: #efe2e2;
+        color: black;
+        font-size: 18px;
+        border-radius: 14px;
+        padding: 25px;
+        gap: 25px;
+      }
+      
+      .contact p,
+      .contact h2,
+      .contact ul {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .contact-title {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      
+      .contact-details-group {
+        display: flex;
+        justify-content: auto;
+        align-content: auto;
+        gap: 3px;
+        
+      }
+      
+       .footer{
+        margin: bottom 25px;px;
+        padding: 0.5rem;
+        text-align: center;
+        color: white;
+        background-color: #222;
+        
+       }
+     
+       
+        
+        
+       
